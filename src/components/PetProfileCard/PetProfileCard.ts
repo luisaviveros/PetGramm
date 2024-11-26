@@ -89,3 +89,9 @@ export class PetProfileCard extends HTMLElement {
                     <h2>${this.petName}</h2>
                     <p>${this.petDescription}</p>
                 </div>
+                   `;
+        }
+    }
+}
+
+customElements.define('pet-profile-card', PetProfileCard);
