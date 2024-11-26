@@ -21,3 +21,4 @@ export { LogoutButton } from './logoutButton/logoutButton';
 export {PetgramBanner} from './petgramBanner/petgramBanner';
 export {PetOwnerForm} from './PetOwnerForm/PetOwnerForm';
 export {PetProfileCard} from './PetProfileCard/PetProfileCard';
+export {PetFeed} from './PetFeed/PetFeed';
