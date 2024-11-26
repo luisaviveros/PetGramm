@@ -13,3 +13,4 @@ export { default as LoginScreen } from './login/login';
 // export { default as EditProfileScreen } from './editProfile/editProfile';
 // export { default as EditProfilePictureScreen } from './editProfilePicture/editProfilePicture';
 export { default as AddPostScreen } from './addPost/addPost';
+// export { default as PetGramScreen } from './PetGramScreen/PetGramScreen';
