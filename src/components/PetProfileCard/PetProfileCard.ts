@@ -48,3 +48,23 @@ export class PetProfileCard extends HTMLElement {
                         height: 100%;
                         object-fit: cover;
                     }
+                    .camera-icon {
+                        position: absolute;
+                        bottom: 5px;
+                        right: 5px;
+                        width: 20px;
+                        height: 20px;
+                        background-color: #2f80ed;
+                        color: #fff;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 12px;
+                        font-weight: bold;
+                    }
+
+                    .text-container {
+                        display: flex;
+                        flex-direction: column;
+                    }
