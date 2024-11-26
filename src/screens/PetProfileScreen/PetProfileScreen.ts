@@ -56,7 +56,7 @@ export class PetProfileScreen extends HTMLElement {
     }
 
     renderPhotos() {
-        // URLs de las fotos del feed
+        
         const photoUrls = [
             "https://example.com/photo1.jpg",
             "https://example.com/photo2.jpg",
