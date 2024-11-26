@@ -16,3 +16,19 @@ export class PetProfileCard extends HTMLElement {
 
         this.render();
     }
+
+    render() {
+        if (this.shadowRoot) {
+            this.shadowRoot.innerHTML = `
+                <style>
+                    :host {
+                        display: block;
+                        font-family: Arial, sans-serif;
+                        background-color: #fdeacb;
+                        padding: 20px;
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                        max-width: 500px;
+                    }
