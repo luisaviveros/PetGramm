@@ -1,4 +1,3 @@
-// Pantalla Completa de Perfil
 export class PetProfileScreen extends HTMLElement {
     constructor() {
         super();
@@ -31,6 +30,13 @@ export class PetProfileScreen extends HTMLElement {
                         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
                         gap: 15px;
                     }
+
+                    .feed-section img {
+                        width: 100%;
+                        border-radius: 10px;
+                        object-fit: cover;
+                        height: 150px; /* Tamaño uniforme para todas las imágenes */
+                    }
                 </style>
                 <!-- Sección del Perfil -->
                 <div class="profile-section">
@@ -43,15 +49,15 @@ export class PetProfileScreen extends HTMLElement {
 
                 <!-- Sección del Feed -->
                 <div class="feed-section">
-                    ${this.renderImages()}
+                    ${this.renderPhotos()}
                 </div>
             `;
         }
     }
 
-    renderImages() {
-        // Agregar URLs de imágenes al feed
-        const imageUrls = [
+    renderPhotos() {
+        // URLs de las fotos del feed
+        const photoUrls = [
             "https://example.com/photo1.jpg",
             "https://example.com/photo2.jpg",
             "https://example.com/photo3.jpg",
@@ -63,10 +69,10 @@ export class PetProfileScreen extends HTMLElement {
             "https://example.com/photo9.jpg",
         ];
 
-        return imageUrls
+        return photoUrls
             .map(
                 (url) => `
-                    <img src="${url}" alt="Pet photo" style="width: 100%; border-radius: 10px; object-fit: cover;">
+                    <img src="${url}" alt="Pet photo">
                 `
             )
             .join("");
