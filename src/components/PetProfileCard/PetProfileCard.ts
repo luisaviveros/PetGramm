@@ -68,3 +68,24 @@ export class PetProfileCard extends HTMLElement {
                         display: flex;
                         flex-direction: column;
                     }
+
+                    .text-container h2 {
+                        font-size: 1.2em;
+                        margin: 0;
+                        color: #333;
+                    }
+
+                    .text-container p {
+                        margin: 5px 0 0 0;
+                        font-size: 0.9em;
+                        color: #666;
+                    }
+                </style>
+                <div class="image-container">
+                    <img src="${this.petImageUrl}" alt="Pet Image">
+                    <div class="camera-icon">📷</div>
+                </div>
+                <div class="text-container">
+                    <h2>${this.petName}</h2>
+                    <p>${this.petDescription}</p>
+                </div>
