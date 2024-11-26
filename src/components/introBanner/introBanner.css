@@ -1,0 +1,21 @@
+/* Estilo para el banner */
+.top-banner {
+	width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+	height: 80px; /* Altura fija del banner */
+	background-color: #ac6bc5; /* Color de fondo del banner */
+	display: flex;
+	justify-content: flex-start; /* Alinea el logo a la izquierda */
+	align-items: center; /* Centra el logo verticalmente */
+	position: fixed; /* Esto hará que el banner se quede fijo en la parte superior */
+	top: 0; /* Coloca el banner en la parte superior de la página */
+	left: 0; /* Alinea el banner con el borde izquierdo de la página */
+	right: 0; /* Asegura que el banner cubra todo el ancho de la pantalla */
+	z-index: 1000; /* Asegura que el banner quede encima de otros elementos */
+}
+
+/* Estilo para el logo */
+#logo {
+	max-height: 60px; /* Ajuste del tamaño máximo de la imagen */
+	height: auto; /* Mantiene la proporción de la imagen */
+	max-width: 100%; /* Asegura que la imagen no exceda el tamaño del contenedor */
+}

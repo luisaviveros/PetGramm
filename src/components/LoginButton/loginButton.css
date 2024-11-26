@@ -1,0 +1,18 @@
+.login-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #FFA000; /* Naranja */
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+
+.login-button:hover {
+    background-color: #FF8C00; 
+}

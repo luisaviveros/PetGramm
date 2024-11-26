@@ -1,0 +1,44 @@
+#button-container {
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+.raya {
+	width: 100%;
+	height: 6px;
+	background-color: #f9b107;
+	position: absolute;
+	z-index: 0;
+	left: 0;
+	box-sizing: border-box;
+}
+
+#addPostBtn {
+	background-color: #f9b107;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 15px 30px;
+	border: none;
+	border-radius: 50px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	position: relative;
+	z-index: 1;
+	transition: background-color 0.3s ease;
+}
+
+#addPostBtn:hover {
+	background-color: #4bacd7;
+}
+
+#addPostBtn:active {
+	transform: scale(0.98);
+}

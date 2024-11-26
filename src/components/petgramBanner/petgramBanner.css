@@ -1,0 +1,32 @@
+
+
+
+
+.banner {
+    background-color: #a152c5; /* Fondo morado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Raspberie, Serif;
+    color: #fff;
+}
+
+.logo {
+    background-image: url('path/to/logo.png'); /* Cambia esto a la ruta del logo */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+
+    font-family: Raspberie, Serif;
+}

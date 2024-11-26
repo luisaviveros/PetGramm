@@ -1,0 +1,30 @@
+.welcome-message {
+    text-align: center; /* Centra todo el contenido */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    font-family: 'Poppins', sans-serif; /* Tipografía */
+  }
+
+  .messageuser {
+    text-align: center; 
+    padding: 5px 0; 
+    font-family: 'Raspberie', serif; 
+  }
+  
+  .message__user h2 {
+    font-size: 36px; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    color: #FF9C00; /* Color del texto naranja */
+    margin: 0;
+  }
+  
+  .message__user h2 span {
+    color: #48C0E0; /* Color del texto azul para el nombre */
+  }
+  
+  .message__user p {
+    font-size: 18px; /* Tamaño de la fuente */
+    font-weight: normal;
+    color: #333333; /* Color del texto */
+    margin-top: 5px; /* Margen entre el título y el texto secundario */
+  }
+  

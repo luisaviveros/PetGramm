@@ -1,0 +1,150 @@
+.post-card {
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 0 auto;
+	font-family: 'Arial', sans-serif;
+	background-color: #4bacd7;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+	width: 100%;
+	background-color: #4bacd7;
+	padding: 15px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.user-info {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.Profile-Picture {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 4px solid #f9b107;
+	margin-right: 15px;
+}
+
+.nombre {
+	font-size: 22px;
+	color: white;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	flex-grow: 1;
+}
+
+.raza {
+	font-size: 20px;
+	color: white;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-right: 40px;
+	flex-shrink: 0;
+}
+
+.image-container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+
+.Post-Picture {
+	width: 100%;
+	height: auto;
+	max-height: 500px;
+	object-fit: cover;
+}
+
+.caption-container {
+	width: 100%;
+	background-color: #4bacd7;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
+
+.caption {
+	font-size: 20px;
+	color: white;
+	flex-grow: 1;
+	word-wrap: break-word;
+}
+
+.likes {
+	display: flex;
+	align-items: center;
+	margin-left: 10px;
+	padding-right: 40px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.likes img {
+	width: 20px;
+	margin-right: 6px;
+}
+
+.likes span {
+	font-size: 18px;
+	color: white;
+	flex-grow: 0;
+}
+
+.like-button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 30px;
+	color: white;
+	margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+	.post-card {
+		width: 100%;
+		margin: 10px 0;
+	}
+
+	.Post-Picture {
+		max-height: 400px;
+	}
+
+	.nombre,
+	.raza,
+	.caption {
+		font-size: 16px;
+	}
+
+	.Profile-Picture {
+		width: 70px;
+		height: 70px;
+	}
+
+	.likes span {
+		font-size: 16px;
+	}
+
+	.like-button {
+		font-size: 25px;
+	}
+}

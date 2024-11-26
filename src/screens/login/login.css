@@ -1,0 +1,128 @@
+/* Contenedor general del login */
+
+
+.login-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f5deb3; 
+	position: relative;
+}
+
+/* Modal de inicio de sesión */
+.login-modal {
+	background-color: #42a5f5; 
+	padding: 2rem;
+	border-radius: 20px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	width: 400px;
+	text-align: center;
+}
+
+
+.title {
+	font-size: 2rem;
+	color: #ffffff;
+	margin-bottom: 1.5rem;
+	font-weight: bold;
+	font-family: Raspberie, Serif;
+
+}
+
+
+.input-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1rem;
+	width: 100%;
+}
+
+.input-field {
+	width: 80%;
+	padding: 0.75rem;
+	border: none;
+	border-radius: 20px;
+	background-color: #ffffff;
+	font-size: 1rem;
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+/* Botón de inicio de sesión */
+.login-button {
+	width: 80%;
+	padding: 0.75rem;
+	background-color: #ffa000; 
+	color: #ffffff;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: bold;
+	margin-top: 1rem;
+	transition: background-color 0.3s;
+}
+
+.login-button:hover {
+	background-color: #ff8c00; 
+}
+
+/* Enlace para registro */
+.link {
+	color: #ffffff;
+	cursor: pointer;
+	margin-top: 1rem;
+	display: block;
+	font-size: 0.9rem;
+	font-family: Poppins, sans-serif;
+	font-weight: bold;
+}
+
+.link:hover {
+	text-decoration: underline;
+}
+
+
+.login-button-style {
+    background-color: #ffac33; /* Fondo amarillo/naranja */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Hace que el botón ocupe el ancho completo del formulario */
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.login-button-style:hover {
+    background-color: #42a5f5; /* Color al pasar el mouse */
+	
+}
+
+@media (max-width: 600px) {
+	.register-modal {
+		width: 90%;
+		padding: 20px;
+	}
+
+	.register-title {
+		font-size: 20px;
+	}
+
+	button[type="submit"] {
+		width: 80%;
+		padding: 10px 0;
+		font-size: 14px;
+	}
+
+	.login-button {
+		font-size: 12px;
+	}
+}
