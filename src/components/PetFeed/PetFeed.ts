@@ -48,3 +48,22 @@ export class PetFeed extends HTMLElement {
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
+                    }
+                </style>
+                <div class="grid">
+                    ${this.pets
+                        .map(
+                            (imageUrl: string) => `
+                        <div class="grid-item">
+                            <img src="${imageUrl}" alt="Pet Photo">
+                        </div>
+                    `
+                        )
+                        .join('')}
+                </div>
+            `;
+        }
+    }
+}
+
+customElements.define('pet-feed', PetFeed);
